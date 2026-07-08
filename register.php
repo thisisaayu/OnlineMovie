@@ -40,7 +40,7 @@ $success = '';
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Aayush Khatiwada"
+                    placeholder="Your name here.."
                     required
                     autocomplete="name"
                     value="<?= htmlspecialchars($_POST['name'] ?? '') ?>"
