@@ -3,9 +3,6 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// ─── BASE URL ────────────────────────────────────────────────
-// Change 'OnlineMovie' to whatever you named your XAMPP folder.
-// Every page that includes this file can use $base for links.
 $base = '/OnlineMovie';
 // ─────────────────────────────────────────────────────────────
 ?>
@@ -18,7 +15,7 @@ $base = '/OnlineMovie';
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?= $base ?>/Assets/Css/style.css">
+    <link rel="stylesheet" href="<?= $base ?>/assets/css/style.css">
 </head>
 <body>
 
@@ -27,6 +24,7 @@ $base = '/OnlineMovie';
 
         <a href="<?= $base ?>/index.php" class="nav-logo">Cine<span>Book</span></a>
 
+        <div class="nav-right">
         <ul class="nav-links">
             <li><a href="<?= $base ?>/index.php" class="nav-link">Home</a></li>
 
@@ -55,6 +53,7 @@ $base = '/OnlineMovie';
         </ul>
 
         <button class="theme-toggle" id="theme-toggle" title="Toggle theme">🌙</button>
+        </div>
 
     </div>
 </nav>
