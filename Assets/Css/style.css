@@ -97,6 +97,11 @@ ul  { list-style: none; }
 }
 .nav-logo span { color: var(--accent); }
 
+.nav-right {
+    display:     flex;
+    align-items: center;
+    gap:         8px;
+}
 .nav-links {
     display:     flex;
     align-items: center;
