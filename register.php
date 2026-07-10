@@ -1,21 +1,34 @@
 <?php
 $pageTitle = 'Register';
+include 'includes/db.php';
+include 'includes/auth.php';
 include 'includes/header.php';
-// TODO: include 'includes/db.php';
-// TODO: include 'includes/auth.php'; 
 
-// TODO: handle form submission
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     $name     = trim($_POST['name']);
-//     $email    = trim($_POST['email']);
-//     $phone    = trim($_POST['phone']);
-//     $password = $_POST['password'];
-//     $confirm  = $_POST['confirm_password'];
-//     register($name, $email, $phone, $password, $confirm, $conn);
-// }
+// Already logged in — go home
+if (isLoggedIn()) {
+    header('Location: /OnlineMovie/index.php');
+    exit;
+}
 
 $error   = '';
 $success = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $result = register(
+        $_POST['name']             ?? '',
+        $_POST['email']            ?? '',
+        $_POST['phone']            ?? '',
+        $_POST['password']         ?? '',
+        $_POST['confirm_password'] ?? '',
+        $conn
+    );
+
+    if ($result === true) {
+        $success = 'Account created! You can now log in.';
+    } else {
+        $error = $result;
+    }
+}
 ?>
 
 <div class="auth-wrap">
@@ -29,7 +42,10 @@ $success = '';
         <?php endif; ?>
 
         <?php if ($success): ?>
-            <div class="alert alert-success"><?= htmlspecialchars($success) ?></div>
+            <div class="alert alert-success">
+                <?= htmlspecialchars($success) ?>
+                <a href="<?= $base ?>/login.php">Login now →</a>
+            </div>
         <?php endif; ?>
 
         <form method="POST" action="register.php">
@@ -40,7 +56,7 @@ $success = '';
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Your name here.."
+                    placeholder="Aayush Khatiwada"
                     required
                     autocomplete="name"
                     value="<?= htmlspecialchars($_POST['name'] ?? '') ?>"
