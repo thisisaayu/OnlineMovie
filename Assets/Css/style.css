@@ -4,20 +4,20 @@
    Tribhuvan University | Ratna Rajyalaxmi Campus
    ============================================================ */
 
-/* --- Variables: Dark (default) ---------------------------- */
+/* --- Variables: Dark (default) — deep dark + cyan accent -- */
 :root {
-    --bg:           #111318;
-    --surface:      #1a1d24;
-    --surface-alt:  #22262f;
-    --border:       #2c3040;
+    --bg:           #0d1117;
+    --surface:      #161c26;
+    --surface-alt:  #1d2433;
+    --border:       #2a3347;
     --accent:       #2dd4bf;
     --accent-hover: #5eead4;
-    --accent-dim:   rgba(45, 212, 191, 0.12);
-    --accent-border:rgba(45, 212, 191, 0.3);
+    --accent-dim:   rgba(45, 212, 191, 0.10);
+    --accent-border:rgba(45, 212, 191, 0.25);
     --amber:        #fbbf24;
-    --text:         #eaedf2;
-    --text-muted:   #8b92a5;
-    --text-dim:     #555e72;
+    --text:         #e8edf5;
+    --text-muted:   #7a8aa0;
+    --text-dim:     #4a5a70;
     --danger:       #f87171;
     --success:      #34d399;
     --font:         'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -25,26 +25,26 @@
     --radius-lg:    14px;
     --nav-h:        64px;
     --max-w:        1200px;
-    --shadow:       0 2px 12px rgba(0,0,0,0.4);
+    --shadow:       0 2px 12px rgba(0,0,0,0.45);
     --transition:   background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* --- Variables: Light ------------------------------------- */
+/* --- Variables: Light — icy cyan bg + hot pink accent ----- */
 [data-theme="light"] {
-    --bg:           #f4f5f7;
+    --bg:           #f0fcfd;
     --surface:      #ffffff;
-    --surface-alt:  #eef0f4;
-    --border:       #dde0e8;
-    --accent:       #0d9488;
-    --accent-hover: #0f766e;
-    --accent-dim:   rgba(13, 148, 136, 0.1);
-    --accent-border:rgba(13, 148, 136, 0.3);
-    --text:         #1a1d24;
-    --text-muted:   #5c6375;
-    --text-dim:     #9ca3af;
-    --danger:       #dc2626;
-    --success:      #16a34a;
-    --shadow:       0 2px 12px rgba(0,0,0,0.08);
+    --surface-alt:  #e3f8fb;
+    --border:       #b6e2ec;
+    --accent:       #e8318a;
+    --accent-hover: #cc2778;
+    --accent-dim:   rgba(232, 49, 138, 0.08);
+    --accent-border:rgba(232, 49, 138, 0.25);
+    --text:         #132230;
+    --text-muted:   #426070;
+    --text-dim:     #7ea0b0;
+    --danger:       #e53e3e;
+    --success:      #0d9488;
+    --shadow:       0 2px 12px rgba(0,0,0,0.07);
 }
 
 /* --- Reset ------------------------------------------------ */
