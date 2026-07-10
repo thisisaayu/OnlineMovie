@@ -1,17 +1,28 @@
 <?php
 $pageTitle = 'Login';
+include 'includes/db.php';
+include 'includes/auth.php';
 include 'includes/header.php';
-// TODO: include 'includes/db.php';
-// TODO: include 'includes/auth.php';
 
-// TODO: handle form submission
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     $email    = trim($_POST['email']);
-//     $password = $_POST['password'];
-//     login($email, $password, $conn);
-// }
+// Already logged in — go home
+if (isLoggedIn()) {
+    header('Location: /OnlineMovie/index.php');
+    exit;
+}
 
-$error = ''; // will be set by auth logic later
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $result = login($_POST['email'] ?? '', $_POST['password'] ?? '', $conn);
+
+    if ($result === true) {
+        // Redirect admin to dashboard, customers to homepage
+        header('Location: ' . (isAdmin() ? '/OnlineMovie/admin/dashboard.php' : '/OnlineMovie/index.php'));
+        exit;
+    } else {
+        $error = $result;
+    }
+}
 ?>
 
 <div class="auth-wrap">
