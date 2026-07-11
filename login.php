@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($result === true) {
         // Redirect admin to dashboard, customers to homepage
-        header('Location: ' . (isAdmin() ? '/OnlineMovie/admin/dashboard.php' : '/OnlineMovie/index.php'));
+        header('Location: ' . (isAdmin() ? '/OnlineMovie/Admin/dashboard.php' : '/OnlineMovie/index.php'));
         exit;
     } else {
         $error = $result;
