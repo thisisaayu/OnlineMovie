@@ -3,7 +3,6 @@ $pageTitle = 'Login';
 include 'includes/db.php';
 include 'includes/auth.php';
 include 'includes/header.php';
-include 'Sql/schema.sql';
 
 // Already logged in — go home
 if (isLoggedIn()) {
