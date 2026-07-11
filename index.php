@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'Now Showing';
 include 'includes/header.php';
-// include 'includes/db.php';      ← uncomment once db.php is ready
+include 'includes/db.php';
 ?>
 
 <div class="container">
