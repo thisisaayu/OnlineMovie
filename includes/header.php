@@ -31,13 +31,13 @@ $base = '/OnlineMovie';
             <?php if (isset($_SESSION['user_id'])): ?>
 
                 <?php if ($_SESSION['role'] === 'admin'): ?>
-                    <li><a href="<?= $base ?>/admin/dashboard.php" class="nav-link">Dashboard</a></li>
-                    <li><a href="<?= $base ?>/admin/movies.php"    class="nav-link">Movies</a></li>
-                    <li><a href="<?= $base ?>/admin/shows.php"     class="nav-link">Shows</a></li>
-                    <li><a href="<?= $base ?>/admin/reports.php"   class="nav-link">Reports</a></li>
+                    <li><a href="<?= $base ?>/Admin/dashboard.php" class="nav-link">Dashboard</a></li>
+                    <li><a href="<?= $base ?>/Admin/movies.php"    class="nav-link">Movies</a></li>
+                    <li><a href="<?= $base ?>/Admin/shows.php"     class="nav-link">Shows</a></li>
+                    <li><a href="<?= $base ?>/Admin/reports.php"   class="nav-link">Reports</a></li>
                 <?php else: ?>
                     <li><a href="<?= $base ?>/index.php"           class="nav-link">Movies</a></li>
-                    <li><a href="<?= $base ?>/user/history.php"    class="nav-link">My Bookings</a></li>
+                    <li><a href="<?= $base ?>/User/history.php"    class="nav-link">My Bookings</a></li>
                 <?php endif; ?>
 
                 <li class="nav-user">
