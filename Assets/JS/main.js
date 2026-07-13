@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function applyTheme(theme) {
         html.setAttribute('data-theme', theme);
         if (toggleBtn) {
-            toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
+            toggleBtn.textContent = theme === 'dark' ? '𖤓' : '☾';
             toggleBtn.title       = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
         }
     }
