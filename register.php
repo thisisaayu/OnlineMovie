@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Aayush Khatiwada"
+                    placeholder="your name..."
                     required
                     autocomplete="name"
                     value="<?= htmlspecialchars($_POST['name'] ?? '') ?>"
