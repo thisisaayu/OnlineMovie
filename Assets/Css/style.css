@@ -31,19 +31,19 @@
 
 /* --- Variables: Light — icy cyan bg + hot pink accent ----- */
 [data-theme="light"] {
-    --bg:           #f0fcfd;
+    --bg:           #f7f8f9;
     --surface:      #ffffff;
-    --surface-alt:  #e3f8fb;
-    --border:       #b6e2ec;
-    --accent:       #e8318a;
-    --accent-hover: #cc2778;
-    --accent-dim:   rgba(232, 49, 138, 0.08);
-    --accent-border:rgba(232, 49, 138, 0.25);
-    --text:         #132230;
-    --text-muted:   #426070;
-    --text-dim:     #7ea0b0;
+    --surface-alt:  #eef1f4;
+    --border:       #dbe1e8;
+    --accent:       #0d9488;
+    --accent-hover: #0f766e;
+    --accent-dim:   rgba(13, 148, 136, 0.08);
+    --accent-border:rgba(13, 148, 136, 0.25);
+    --text:         #16202b;
+    --text-muted:   #4a5a70;
+    --text-dim:     #8394a8;
     --danger:       #e53e3e;
-    --success:      #0d9488;
+    --success:      #16a34a;
     --shadow:       0 2px 12px rgba(0,0,0,0.07);
 }
 
