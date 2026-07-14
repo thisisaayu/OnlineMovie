@@ -113,12 +113,14 @@ ul  { list-style: none; }
     border-radius: var(--radius);
     font-size:     14px;
     font-weight:   500;
-    transition:    color 0.15s, background 0.15s;
+    transition:    color 0.15s, background 0.15s, box-shadow 0.2s, transform 0.2s;
 }
 .nav-link:hover,
 .nav-link.active {
     color:           var(--text);
     background:      var(--surface-alt);
+    box-shadow:      0 4px 12px var(--accent-dim);
+    transform:       translateY(-1px);
     text-decoration: none;
 }
 .nav-user {
