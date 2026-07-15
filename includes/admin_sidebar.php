@@ -1,7 +1,7 @@
 <div class="admin-sidebar">
     <p class="admin-sidebar-title">Admin Panel</p>
 
-    <a href="<?= $base ?>/admin/dashboard.php"
+    <a href="<?= $base ?>/Admin/dashboard.php"
        class="admin-nav-link <?= basename($_SERVER['PHP_SELF']) === 'dashboard.php' ? 'active' : '' ?>">
         Dashboard
     </a>
