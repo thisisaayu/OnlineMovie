@@ -66,7 +66,7 @@ include 'includes/db.php';
                         <span class="badge"><?= htmlspecialchars($movie['language']) ?></span>
                         <span class="badge badge-amber"><?= htmlspecialchars($movie['rating']) ?></span>
                     </div>
-                    <a href="<?= $base ?>/user/booking.php?movie_id=<?= (int)$movie['id'] ?>"
+                    <a href="<?= $base ?>/User/booking.php?movie_id=<?= (int)$movie['id'] ?>"
                        class="btn btn-primary btn-sm btn-block">
                         Book Now
                     </a>
