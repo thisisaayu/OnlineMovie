@@ -5,19 +5,19 @@
        class="admin-nav-link <?= basename($_SERVER['PHP_SELF']) === 'dashboard.php' ? 'active' : '' ?>">
         Dashboard
     </a>
-    <a href="<?= $base ?>/admin/movies.php"
+    <a href="<?= $base ?>/Admin/movies.php"
        class="admin-nav-link <?= basename($_SERVER['PHP_SELF']) === 'movies.php' ? 'active' : '' ?>">
         Movies
     </a>
-    <a href="<?= $base ?>/admin/halls.php"
+    <a href="<?= $base ?>/Admin/halls.php"
        class="admin-nav-link <?= basename($_SERVER['PHP_SELF']) === 'halls.php' ? 'active' : '' ?>">
         Halls
     </a>
-    <a href="<?= $base ?>/admin/shows.php"
+    <a href="<?= $base ?>/Admin/shows.php"
        class="admin-nav-link <?= basename($_SERVER['PHP_SELF']) === 'shows.php' ? 'active' : '' ?>">
         Shows
     </a>
-    <a href="<?= $base ?>/admin/reports.php"
+    <a href="<?= $base ?>/Admin/reports.php"
        class="admin-nav-link <?= basename($_SERVER['PHP_SELF']) === 'reports.php' ? 'active' : '' ?>">
         Reports
     </a>
