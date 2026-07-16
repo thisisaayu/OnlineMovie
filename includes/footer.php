@@ -17,6 +17,6 @@
     </div>
 </footer>
 
-<script src="<?= $base ?>/assets/js/main.js"></script>
+<script src="<?= $base ?>/Assets/JS/main.js"></script>
 </body>
 </html>
