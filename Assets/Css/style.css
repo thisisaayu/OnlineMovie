@@ -536,7 +536,39 @@ tbody td { padding: 12px 16px; }
 
 .admin-content { padding: 32px 36px; }
 
-/* --- Footer ----------------------------------------------- */
+/* --- Policy pages ----------------------------------------- */
+.policy-wrap {
+    max-width:     780px;
+    margin:        0 auto;
+    padding-bottom: 60px;
+}
+.policy-section {
+    margin-bottom: 36px;
+}
+.policy-heading {
+    font-size:     17px;
+    font-weight:   600;
+    margin-bottom: 12px;
+    color:         var(--text);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+.policy-section p {
+    color:       var(--text-muted);
+    font-size:   15px;
+    line-height: 1.8;
+}
+.policy-list {
+    list-style:  disc;
+    padding-left: 20px;
+    color:       var(--text-muted);
+    font-size:   15px;
+    line-height: 2;
+}
+.policy-list li { margin-bottom: 4px; }
+.policy-list strong { color: var(--text); }
+
+/* --- Footer ------------------------------------------------ */
 .footer {
     border-top: 1px solid var(--border);
     padding:    32px 24px;
@@ -549,6 +581,18 @@ tbody td { padding: 12px 16px; }
 .footer-brand span { color: var(--accent); }
 .footer-copy  { color: var(--text-muted); font-size: 14px; }
 .footer-sub   { color: var(--text-dim);   font-size: 12px; margin-top: 4px; }
+.footer-links {
+    margin-top:  12px;
+    font-size:   13px;
+    display:     flex;
+    gap:         8px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:   wrap;
+}
+.footer-links a { color: var(--text-muted); }
+.footer-links a:hover { color: var(--accent); text-decoration: none; }
+.footer-dot { color: var(--text-dim); }
 
 /* --- Utilities -------------------------------------------- */
 .text-muted   { color: var(--text-muted); }
