@@ -52,7 +52,7 @@ $base = '/OnlineMovie';
             <?php endif; ?>
         </ul>
 
-        <button class="theme-toggle" id="theme-toggle" title="Toggle theme">🌙</button>
+        <button class="theme-toggle" id="theme-toggle" title="Toggle theme">𖤓</button>
         </div>
 
     </div>
