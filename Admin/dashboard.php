@@ -1,9 +1,9 @@
 <?php
 $pageTitle = 'Dashboard';
 include '../includes/header.php';
-// TODO: include '../includes/db.php';
-// TODO: include '../includes/auth.php';
-// TODO: requireAdmin(); ← uncomment once auth is ready
+include '../includes/db.php';
+include '../includes/auth.php';
+requireAdmin();
 
 // ── Placeholder stats ─────────────────────────────────────
 // TODO: replace each with a real DB query, e.g.:
