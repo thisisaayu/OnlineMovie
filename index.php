@@ -52,7 +52,7 @@ include 'includes/db.php';
 
                 <div class="movie-poster">
                     <?php if (!empty($movie['poster_url'])): ?>
-                        <img src="<?= $base ?>/assets/images/<?= htmlspecialchars($movie['poster_url']) ?>"
+                        <img src="<?= $base ?>/Assets/images/<?= htmlspecialchars($movie['poster_url']) ?>"
                              alt="<?= htmlspecialchars($movie['title']) ?>">
                     <?php else: ?>
                         <span>No Poster</span>

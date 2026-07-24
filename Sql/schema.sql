@@ -189,11 +189,11 @@ CREATE TABLE IF NOT EXISTS payments (
 
 -- ============================================================
 -- SEED: default admin account
---   password = "admin123" (bcrypt hash — change in production)
+--   password = "admin123"
 -- ============================================================
 INSERT INTO users (name, email, password, role) VALUES
 ('Admin', 'admin@onlinemovie.com',
- '$2y$12$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', -- "password" bcrypt
+ '$2y$12$xD2gg7P5501uQzO1nT8qpuepMp9aM0UcjKNmcG6e4DRfuF0of1pIW',
  'admin');
 
 -- ============================================================
